@@ -1,0 +1,34 @@
+Docker - 13/3/25
+
+sudo yum install docker -y
+
+sudo systemctl start docker
+sudo systemctl enable docker
+
+sudo docker run  -d -P nginx  --> It will create a new container with randome port
+
+sudo docker run -d -p 333:80 nginx  --> It will create a new container with desired port (333) and go to service nginx (80)
+
+sudo docker run -d -p 8888:8080 tomcat --> It will create a new container with desired port (8888) and go to service nginx (8080)
+
+sudo docker ps  --> to check the list of container
+
+
+sudo docker kill container_id  --> To kill the container
+
+sudo docker stop container_id --> To stop the container
+
+
+sudo docker ps -a --> To see the all container even if it is deleted.
+
+sudo docker start container_id  --> It will start the container .
+
+sudo docker run -d -P --name mycontainer nginx --> to create a continer with a name and it will create with a random reciveing port.
+
+sudo docker logs  container_name --> To check container logs with its name
+
+sudo docker logs container_id  --> to check the container logs with its container_id.
+
+
+
+
