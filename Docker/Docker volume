@@ -1,0 +1,5 @@
+sudo docker volume create  vol-1
+sudo docker volume ls
+sudo docker run -d -v vol-1:/usr/share/nginx/html/ -P nginx
+sudo docker run -d -v vol-1:/usr/share/nginx/html/ --name cdec -P nginx
+sudo docker run -d -P -v /mnt/demo:/usr/share/nginx/html/ nginx
