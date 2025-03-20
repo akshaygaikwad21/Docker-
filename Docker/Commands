@@ -29,6 +29,15 @@ sudo docker logs  container_name --> To check container logs with its name
 
 sudo docker logs container_id  --> to check the container logs with its container_id.
 
+===============================================================================================
+
+Deploy 3 tier app on docker
+
+#commands
+
+sudo docker build -t student -> to build the image
+
+sudo docker run -d -it student bash -> To run it.
 
 
 
