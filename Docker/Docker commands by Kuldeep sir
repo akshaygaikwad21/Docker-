@@ -16,25 +16,27 @@ sudo docker exec -it <container name> bash
 
 9-4-25
 
-sudo sh -c 'docker rm -f $(docker ps -aq)' --- To forcefully remove all container at a time.
+1)sudo sh -c 'docker rm -f $(docker ps -aq)' --- To forcefully remove all container at a time.
 
-sudo docker commit <changed container name> <image name> --- To create a new image from changed container
+2)sudo docker commit <changed container name> <image name> --- To create a new image from changed container
     Ex- sudo docker commit cont1 MyImage1 
 
-sudo docker commit cont1 image1
+3)sudo docker commit cont1 image1
 
 
-sudo docker tag image1 <username>/<image New Name>:007 --- Renamed the image name
+4)udo docker tag image1 <username>/<image New Name>:007 --- Renamed the image name
     Ex- sudo docker tag image1 akshaygaikwad21/nginx-mod:007
 
 
-sudo docker login -- To login to DockerHub Registory
+5)sudo docker login -- To login to DockerHub Registory
 
-sudo docker push <username>/<image New name>:007 --- To push image to registory
+6)sudo docker push <username>/<image New name>:007 --- To push image to registory
     Ex- sudo docker tag akshaygaikwad21/nginx-mod:007
 
 
-For troubleshoot the container -
+7)For troubleshoot the container -
     sudo docker log   --- to see logs
 
     sudo docker inspect --- to see full info. of container
+
+--------------------------------------------------------------------------------------------------
