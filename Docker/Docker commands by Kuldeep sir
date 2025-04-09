@@ -16,7 +16,7 @@ sudo docker exec -it <container name> bash
 
 9-4-25
 
-sudo docker rm -f $(docker ps -aq) --- To forcefully remove all container at a time.
+sudo sh -c 'docker rm -f $(docker ps -aq)' --- To forcefully remove all container at a time.
 
 sudo docker commit <changed container name> <image name> --- To create a new image from changed container
     Ex- sudo docker commit cont1 MyImage1 
