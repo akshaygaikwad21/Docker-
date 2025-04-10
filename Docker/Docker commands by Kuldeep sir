@@ -64,3 +64,7 @@ sudo docker exec -it <container name> bash
 5) To create a container inside that netowrk.
     - sudo docker run -d -P --network Akshay cont1 nginx
     
+6)  To connect to New n/w.
+docker netowrk connect bridge <container name>
+Ex - docker network connect bridge container6
+
