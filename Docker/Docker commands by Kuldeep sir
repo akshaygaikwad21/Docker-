@@ -24,7 +24,7 @@ sudo docker exec -it <container name> bash
 3)sudo docker commit cont1 image1
 
 
-4)udo docker tag image1 <username>/<image New Name>:007 --- Renamed the image name
+4)sudo docker tag image1 <username>/<image New Name>:007 --- Renamed the image name
     Ex- sudo docker tag image1 akshaygaikwad21/nginx-mod:007
 
 
@@ -40,3 +40,15 @@ sudo docker exec -it <container name> bash
     sudo docker inspect --- to see full info. of container
 
 --------------------------------------------------------------------------------------------------
+10-4-25
+
+    # Docker Network
+
+1) gpasswd -a ec2-user docker ---- To add docker user in the docker group
+
+2) There are 3 types od docker network-
+    - Bridge - By default --> it allocates ip address i.e /16 i.e 65,000 container
+    - Host - ---------------> This network container can connect with each other within its n/w.
+    - None - ---------------> This network's container are isolated i.e cannot connect with anyone.
+
+    
