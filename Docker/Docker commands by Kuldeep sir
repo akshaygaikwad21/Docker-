@@ -51,4 +51,7 @@ sudo docker exec -it <container name> bash
     - Host - ---------------> This network container can connect with each other within its n/w.
     - None - ---------------> This network's container are isolated i.e cannot connect with anyone.
 
-    
+
+3) To connect Bridge netowrk with eachother.
+    -go to the 1st bridge n/w's containers shell
+    - ping <ip address of the cont2 >
