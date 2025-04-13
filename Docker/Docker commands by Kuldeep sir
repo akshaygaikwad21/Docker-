@@ -68,3 +68,44 @@ sudo docker exec -it <container name> bash
 docker netowrk connect bridge <container name>
 Ex - docker network connect bridge container6
 
+--------------------------------------------------------------------------------------------------
+
+10-4-25
+
+** Docker Volume **
+
+- Volume is a Storage.
+- Volume in nothing but mounting of containers directory into server's directory.
+
+- 2 Types of Volmes.
+
+    - Bind mount volume
+    - Permanat volume
+
+    - Bind mount volume
+        - it is temporary volume.
+        - These volumes can be created in any location.
+        - High risk.
+        - used for testing purpose.
+
+    - Permanant Volume
+        - It is permanant volumes.
+        - These volumes are created inside the var/lib/docker/volumes/
+        - Low risk.
+        - Used for each.
+
+
+
+Commands
+
+1) sudo docker run -d -P -v /root/akshay/:/opt --name cont1 nginx
+
+    - It will create the volume name "akshay" in the mentioned directory.
+    - and will be sharing the data with /opt directory of container.
+
+2) sudo docker run -d -P -v volume1:/usr/share/nginx/html --name cont2 nginx.
+
+    - It will create the volume name "volume1" in the default root directory i.e var/lib/docker/volumes
+    - and will be sharing the data with /usr/share/nginx/html directory of the container.
+
+    
