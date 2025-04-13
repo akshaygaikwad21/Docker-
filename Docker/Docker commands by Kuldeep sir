@@ -70,7 +70,7 @@ Ex - docker network connect bridge container6
 
 --------------------------------------------------------------------------------------------------
 
-10-4-25
+11-4-25
 
 ** Docker Volume **
 
@@ -108,4 +108,3 @@ Commands
     - It will create the volume name "volume1" in the default root directory i.e var/lib/docker/volumes
     - and will be sharing the data with /usr/share/nginx/html directory of the container.
 
-    
