@@ -108,3 +108,13 @@ Commands
     - It will create the volume name "volume1" in the default root directory i.e var/lib/docker/volumes
     - and will be sharing the data with /usr/share/nginx/html directory of the container.
 
+--------------------------------------------------------------------------------------------------
+
+17-4-25
+
+Config to be add in contect.xml file 
+
+<Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
+		  maxTotal="100" maxIdle="30" maxwaitMillis="10000"
+		  username="root" password="1234" driverClassName="com.mysql.jdbc.Driver"
+		  url="jdbc:mysql://172.17.0.2:3306/mydb"/>
