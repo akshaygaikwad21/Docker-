@@ -112,7 +112,12 @@ Commands
 
 17-4-25
 
-Config to be add in contect.xml file 
+
+1) SCP command 
+    scp -i .\Linuxkey.pem .\mysql-connector.jar .\student.war ubuntu@13.233.130.68:/home/ubuntu
+
+
+2) Config to be add in contect.xml file 
 
 <Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
 		  maxTotal="100" maxIdle="30" maxwaitMillis="10000"
