@@ -129,3 +129,15 @@ Commands
 		  maxTotal="100" maxIdle="30" maxwaitMillis="10000"
 		  username="root" password="1234" driverClassName="com.mysql.jdbc.Driver"
 		  url="jdbc:mysql://172.17.0.2:3306/mydb"/>
+
+
+4) Dockerfile 
+
+        FROM ubuntu:latest
+        WORKDIR /opt
+        RUN  apt update && apt install openjdk-11-jdk -y && apt install vim -y
+        ADD  https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.104/bin/apache-tomcat-9.0.104.tar.gz .
+        RUN tar -xzf apache-tomcat-9.0.104.tar.gz
+        COPY student.war /opt/apache-tomcat-9.0.104/webapps/
+        COPY mysql-connector.jar /opt/apache-tomcat-9.0.104/lib/
+        CMD  ["/opt/apache-tomcat-9.0.104/bin/catalina.sh" , "run"]
