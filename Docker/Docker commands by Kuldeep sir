@@ -111,7 +111,8 @@ Commands
 --------------------------------------------------------------------------------------------------
 
 17-4-25
-
+ 
+ #3 tier application using Docker
 
 1) SCP command 
     scp -i .\Linuxkey.pem .\mysql-connector.jar .\student.war ubuntu@13.233.130.68:/home/ubuntu
